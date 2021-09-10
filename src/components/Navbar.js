@@ -14,8 +14,8 @@ function Navbar() {
             </div>
 
             <div className="nav-links">
-              <ul class="navbar-nav">
-                <li class="nav-item">
+              <ul className="navbar-nav">
+                <li className="nav-item">
                   <NavLink exact activeClassName="active-link" className="nav-link float-right" aria-current="page" to="/">
                     Home
                   </NavLink>
