@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image {
+  width: 100vw;
+  height: 100%;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: floralwhite;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: floralwhite;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.home-items{
+  position: absolute;
+  top: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+h1{
+  position: relative;
+  display: inline-block;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4em;
+  line-height: 0.8rem;
+  letter-spacing: 5px;
+  text-shadow: 0 0 12px rgba(105, 105, 105, 0.212),
+  0 0 12px rgba(105, 105, 105, 0.212);
+  color: floralwhite;
+  z-index: 10;
+}
+
+h2{
+  position: relative;
+  display: inline-block;
+  color: floralwhite;
+  margin-top: -0.8rem;
+  z-index: 10;
+}
+
+.home-items .btns{
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  z-index: 10;
+}
+
+.home-items .btns a{
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 0 12px rgba(105, 105, 105, 0.212),
+  0 0 12px rgba(105, 105, 105, 0.212);
+}
+
+.home-items .btns .btn1{
+ background-color: #ff0000;
+ color: white;
+}
+
+.home-items .btns .btn2{
+  background-color: white;
+  color: #000;
+ }
+ 
+
+ .form{
+  height: 725px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat;
+  background-size: cover;
+}
+
+form{
+  padding-left: 2rem ;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  text-align: right;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.form input{
+  margin-left: 1rem !important;
+}
+
+.m-tb{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-t{
+  margin-top: 1rem;
+}
+
+.m-b{
+  margin-bottom: 1rem;
+}
+
+form h4{
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.table{
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.btn{
+  background-color: #ff0000;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  padding: 0.5rem;
+  font-weight: 600;
+  border-radius: 4px;
 }
