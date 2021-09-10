@@ -8,9 +8,9 @@ function Navbar() {
         <div className="container">
           <div className="nav-items">
             <div className="logo">
-              <a href="#" className="nav-brand">
+              <NavLink to="/" className="nav-brand">
                 WEB
-              </a>
+              </NavLink>
             </div>
 
             <div className="nav-links">

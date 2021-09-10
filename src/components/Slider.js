@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SliderImages } from './SliderImages';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const Slider = ({ slides }) => {
     const [current, setCurrent] = useState(0);
@@ -27,8 +28,8 @@ const Slider = ({ slides }) => {
           <h2>We enable people to enjoy locally grown eco-friendly and healthy<br/>
 foods that are reasonably priced and conveniently delivered.</h2>
        <div className="btns">
-        <a href="#" className="btn1">SHOP NOW</a>
-        <a href="#" className="btn2">KNOW MORE</a>
+        <NavLink to="/" className="btn1">SHOP NOW</NavLink>
+        <NavLink to="/" className="btn2">KNOW MORE</NavLink>
         </div>
         </div>
         {SliderImages.map((slide, index) => {
@@ -38,7 +39,7 @@ foods that are reasonably priced and conveniently delivered.</h2>
               key={index}
             >
               {index === current && (
-                <img src={slide.image} alt='travel image' className='image' />
+                <img src={slide.image} alt='food' className='images' />
               )}
             </div>
           );
