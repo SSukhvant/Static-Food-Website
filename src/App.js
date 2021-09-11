@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route } from "react-router";
+import {Route } from "react-router";
 import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./Home";
