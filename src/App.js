@@ -12,7 +12,7 @@ function App() {
    <switch>
    <Route exact path="/" component={Home} />
    <Route exact path="/SignUp" component={SignUp}/>
-   <Redirect to="/"/>
+   {/* <Redirect to="/"/> */}
    </switch>
    </>
   );

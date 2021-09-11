@@ -33,16 +33,6 @@ const SignUp = () => {
           </div>
 
           <div>
-            {/* <label for="gender">Gender :</label>
-            <input
-              type="number"
-              name="available"
-              className="available"
-              id="gender"
-              placeholder="Gender"
-              required
-            /> */}
-
             <label for="gender">Gender :</label>
             <select name="gender" className="gender" placeholder="Gender" id="gender">
               <option></option>
